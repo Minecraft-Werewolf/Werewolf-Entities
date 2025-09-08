@@ -15,7 +15,7 @@ export type SemVer = {
  */
 
 export const properties = {
-    id: "kairo-template", # // a-z & 0-9 - _
+    id: "werewolf-entities", // a-z & 0-9 - _
     metadata: { 
         /** 製作者の名前 */
         authors: [
@@ -23,8 +23,8 @@ export const properties = {
         ]
     },
     header: {
-        name: "Kairo-template", #
-        description: "A starter template for developing Minecraft Bedrock addons that rely on Kairo.", #
+        name: "Werewolf-Entities",
+        description: "defines all entity data. Since entity definitions often conflict with other add-ons, this pack centralizes and manages all entities",
         version: { 
             major: 1, 
             minor: 0, 
@@ -33,13 +33,13 @@ export const properties = {
             // build: "abc123",
         },
         min_engine_version: [ 1,21,100 ],
-        uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" #
+        uuid: "fe256f06-40ba-4a6b-82a0-fc6b02fa96ed"
     },
     resourcepack: {
         name: "Use BP Name",
         description: "Use BP Description",
-        uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", #
-        module_uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", #
+        uuid: "61b859e0-efe4-473c-9e00-d6df0acddf84",
+        module_uuid: "17732f0a-f64a-4efe-9f2b-f14164c65a9b",
     },
     modules: [
         {
@@ -47,24 +47,23 @@ export const properties = {
 			language: "javascript",
 			entry: "scripts/index.js",
             version: "header.version",
-            uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" #
+            uuid: "b618ebc0-40c1-4d93-b333-4735ad82325c"
         }
     ],
     dependencies: [
 		{
 			module_name: "@minecraft/server",
-			version: "2.1.0" #
+			version: "2.1.0"
 		},
 		{
 			module_name: "@minecraft/server-ui",
-			version: "2.0.0" #
+			version: "2.0.0"
 		}
 	],
     /** 前提アドオン */
     requiredAddons: {
-        /**
-         * id: version (string) // "kairo": "1.0.0"
-         */
+        "kairo": "1.0.0-dev.1" // "kairo": "1.0.0"
+         
     },
     tags: [
         // "stable",
