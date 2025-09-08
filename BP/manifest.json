@@ -3,7 +3,7 @@
   "header": {
     "name": "Werewolf-Entities",
     "description": "defines all entity data. Since entity definitions often conflict with other add-ons, this pack centralizes and manages all entities",
-    "uuid": "61b859e0-efe4-473c-9e00-d6df0acddf84",
+    "uuid": "fe256f06-40ba-4a6b-82a0-fc6b02fa96ed",
     "version": [
       1,
       0,
@@ -17,8 +17,10 @@
   },
   "modules": [
     {
-      "type": "resources",
-      "uuid": "17732f0a-f64a-4efe-9f2b-f14164c65a9b",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/index.js",
+      "uuid": "b618ebc0-40c1-4d93-b333-4735ad82325c",
       "version": [
         1,
         0,
@@ -28,7 +30,15 @@
   ],
   "dependencies": [
     {
-      "uuid": "fe256f06-40ba-4a6b-82a0-fc6b02fa96ed",
+      "module_name": "@minecraft/server",
+      "version": "2.1.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    },
+    {
+      "uuid": "61b859e0-efe4-473c-9e00-d6df0acddf84",
       "version": [
         1,
         0,
